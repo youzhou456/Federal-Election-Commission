@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+    <div class="row featurette">
+        <br>
+        <img class="featurette-image img-fluid mx-auto" src="~/images/FEC.JPG" alt="Generic placeholder image" width="220" height="220" align="left"/>
+        <h2>Federal Election Commission</h2>
+        <p class="lead text-muted">The Federal Election Commission (FEC) is the independent regulatory agency to protect the integrity of the federal campaign finance process by providing transparency and fairly enforcing and administering federal campaign finance laws.</p>
+        <a class="btn btn-secondary my-2" href="https://www.fec.gov/">Learn more about FEC</a>
+    </div>
+</br>
+
+
+<p>
+    FEC application lets you fetch data from Federal Election Commission via their public <a href="https://api.open.fec.gov/developers/#/" target="_blank">API</a>.
+    <br />
+    <br />
+    Go to below buttons to explore the data from API and save it to the databse.
+
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>
+                <a asp-controller="Home" asp-action="Candidates" class="btn btn-primary my-2">Look up Candidates</a>
+            </td>
+            <td>
+                <a asp-controller="Home" asp-action="Committees" class="btn btn-primary my-2">Explore Committee Profile</a>
+            </td>
+            <td>
+                <a asp-controller="Home" asp-action="Filings" class="btn btn-primary my-2">Discover Filings</a>
+            </td>
+        </tr>
+    </thead>
+</table>
+
+
+<p>
+    See how candidates and committees raise and spend money in federal elections in below links. This financial data helps voters make informed decisions.
+</p>
+
+<div class="row">
+    <div>
+        <a class="btn btn-secondary my-2" href="https://www.fec.gov/data/browse-data/?tab=candidates">Learn more about Candidates</a>
+    </div>
+    <div>
+        <a class="btn btn-secondary my-2" href="https://www.fec.gov/data/browse-data/?tab=committees">Learn more about Committees</a>
+    </div>
+    <div>
+        <a class="btn btn-secondary my-2" href="https://www.fec.gov/data/browse-data/?tab=filings">Learn more about Filings</a>
+    </div>
+</div>
+
